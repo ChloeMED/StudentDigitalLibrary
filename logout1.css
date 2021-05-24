@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #FFFFFF;
+	color: #000000;
+	position: relative;
+	height:100%;
+	width: 90%;
+}
+p.rtl{
+ 	direction: rtl;
+ }
+nav{
+	position: absolute;
+	justify-content: space-between;
+	height:30px;
+	padding:1px;		
+}
+nav p{
+	color: #0a4b78;
+	font-family: tahoma;
+	font-weight: bold; 
+}
+/* CSS for digi starts here */
+.digi-library{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 10px;
+	color: #0a4b78;
+	font-family: tahoma;
+	font-weight: bold; 
+}
+.digi-library h4,
+.digi-library p{
+	margin: 0px;
+}
+.top{
+	font-weight: 400;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.search{
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding: -5px;
+	margin: 5px 5px -35px -25px;
+}
+.searchTerm{
+	width: 100%;
+	border: 3px solid #0a4b78;
+	border-radius: none;
+	padding: 5px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+}
+.searchTerm:focus{
+	color:#00B4CC;
+}
+.searchButton{
+	width: 40px;
+	height: 36px;
+	border:1px solid #0a4b78;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+button{
+	height: 30px;
+	width: 80px;
+	background-color: #FFFFFF;
+	border-top: thin solid #50575e;
+	border-right: thin solid #50575e;
+	border-left: thin solid #50575e;
+	border-bottom: thin solid #50575e;
+	color: #0a4b78;
+	border-radius: 5px;
+}
+header{	
+	padding: 80px 80px 80px 80px;
+	margin:100px;
+	border-top: thin solid #50575e;
+	border-right: thin solid #50575e;
+	border-left: thin solid #50575e;
+	border-bottom: thin solid #50575e;
+	border-radius: 50px;
+	background-color: #043959;
+	color: #FFFFFF;
+	align-items: center;
+	position: absolute;
+	height: 400px;
+	width: 300px;
+} 
+h3{
+	font-size: 30px;
+	font-family: Tahoma;
+	font-weight: bold;
+	text-align: center;
+}
+.tfv{
+	font-size: 15px;
+	font-family: Tahoma;
+	font-weight: lighter;
+	text-align: center;
+}
+#email-text-input,
+#password-text-input{
+	border-radius: 30px;
+	width: 300px;
+	height: 30px;
+}
+
+.log button{
+	border-radius: 30px;
+	width: 300px;
+	height: 35px;
+	background-color: #00CED1;
+	color: #FFFFFF;
+}
+a{
+	text-decoration:none;
+}
+p a{
+	color: #00CED1;
+}
+

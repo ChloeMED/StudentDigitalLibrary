@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #FFFFFF;
+	color: #000000;
+	position: relative;
+	height:100%;
+	width: 90%;
+}
+button{
+	width: 100px;
+	height: 30px;
+}
+span{
+	align-items: right;
+}
+
+:root{
+	--panel-color: rgba(0,0,0,0.135);
+	--panel-border-width: 0.1em;
+	--panel-padding: 0.75em;
+}
+.panel{
+	background: var(--panel-color);
+	border-radius: var(--panel-border-width);
+	padding: var(--panel-border-width);
+}
+.panel_header,
+.panel_content{
+	padding: var(--panel-padding);
+}
+.panel_title{
+	line-height: 1;
+}
+.panel_content{
+	background: #fff;
+}
+
+.box{
+	margin: 100px auto;
+	width: 300px;
+	height: 50px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.search{
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+.searchTerm{
+	width: 100%;
+	border: 3px solid #00B4CC;
+	border-radius: none;
+	padding: 5px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+}
+.searchTerm:focus{
+	color:#00B4CC;
+}
+.searchButton{
+	width: 40px;
+	height: 36px;
+	border:1px solid #00B4CC;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.search{
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding: -5px;
+	margin: 5px 5px -15px -175px;
+}
+
+
+
+.field-icon{
+	float: right;
+	margin-left: -25px;
+	margin-top: -25px;
+	position: relative;
+	z-index: 2; 
+}
+.container{
+	padding-top: 50px;
+	margin: auto;
+}

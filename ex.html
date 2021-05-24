@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Ex</title>
+	<link rel="stylesheet" type="text/css" href="ex1.css"/>
+</head>
+<body>
+	
+
+
+
+
+<p>
+	<div class="panel">
+		<section class="panel">
+		<header class="panel_header">
+			<h1 class="panel_title">panel on a gradient background</h1>
+		</header>
+		<div class="panel_content">this panel picks up the gradient below</div>
+		</section>
+	</div>
+	<div class="example bg2"><section class="panel">
+		<header class="panel_header">
+			<h1 class="panel_title">panel on a patterned background</h1>
+		</header>
+		<div class="panel_content">this panel picks up the pattern below</div>
+		</section>
+	</div>
+</p>
+<p>
+<button class="w3-button w3-red" onclick="document.getElementById('id01').style.display='block'">show panel</button>
+	<div id="id01" class="w3-panel w3-greenw3-display-container" style="display:none">
+		<span onclick="this.parentElement.style.display='none'" >click on the x to close this panel</span>	
+	</div>
+</p>
+<p>
+<button class="w3-button w3-red" onclick="document.getElementById('id02').style.display='block'">panel</button>
+	<div id="id02" class="w3-panel w3-greenw3-display-container" style="display:none">
+		<span onclick="this.parentElement.style.display='none'" >click on the x to close this panel</span>	
+	</div>
+</p>
+
+<p>
+	<div class="box">
+		<div class="container-1">
+			<span class="icon"><i class="fa fa-search"></i></span>
+			<input type="search" id="search" placeholder="Search..."/>
+		</div>
+	</div>
+</p>
+
+
+<p>
+	<div class="wrap">
+		<div class="search">
+			<input type="text" class="searchTerm" placeholder="Search...">
+			<button type="submit" class="searchButton">
+				<i class="fa fa-search"></i>
+				<img src="search-icon.png"  align="left" style="height: 20px; width: 20px;"/> 
+			</button>
+	</div>
+</div>
+</p>
+
+
+<div class="container1">
+		<div class="search-box">
+			<input type="text" placeholder="search" id="search-text-input" /> 			
+			<a href="search-icon"><button><img src="search-icon.png"  align="left" style="height: 15px; width: 15px;"/> </button></a>		
+		</div>
+		</div>
+
+
+
+<p>click the radio button to toggle between password visibility:</p>
+password:<input type="password" value="FakePSW" id="myInput"><br><br>
+<input type="checkbox" onclick="myFunction()" >show password
+<script>
+	function myFunction(){
+		var x=
+		document.getElementById("myInput");
+		if (x.type === "password") {
+			x.type= "text";
+		}else{
+			x.type="password";
+		}
+	}
+</script> 
+
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<form class="form-horizontal" method="" action="">
+
+
+<div class="form-group">
+	<label class="col-md-4 control-label">Password</label>
+<div class="col-md-6">
+	<input id="password-field" type="password" class="form-control" name="password" value="secret">
+	<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script >
+$(".toggle-password").click(funtion){
+
+	$(this).toggleClass("fa-eye fa-eye-slash");
+	var input=$($(this).attr("toggle"));
+	if(input.attr("type")=="password"){
+		input.attr("type", "text");
+	} else {
+		input.attr("type", "password");
+	}
+};
+</script>
+
+
+</body></html>
